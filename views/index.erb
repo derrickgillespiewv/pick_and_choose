@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang=''>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style.css">
+   <link rel= "stylesheet" type="text/css" href="css/style.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>Test Site</title>
+</head>
+
+<body>
+
+  <div id='cssmenu'>
+  Test Site
+    </ul>
+    <ul id='words'>
+      <li><a href='/index'>Home</a></li>
+      <li class='active has-sub'><a href='#'>Links</a>
+        <ul>
+         <li class='active'><a href='https://www.google.com/'>Google</a>
+ 		
+         <li class='active'><a href='http://www.minedminds.org/'>Mined Minds</a>
+
+         <li class='active'><a href='https://stackoverflow.com/'>Stack Overflow</a>
+
+         <li class='active'><a href='/enter_amount'>Coin Changer</a>
+
+         <li class='active'><a href='/enter_name'>Pair Machine</a>
+
+
+      </ul>
+    </li>
+    <li><a href='#'>About</a></li>
+    <li><a href='#'>Contact</a></li>
+  </ul>
+  </div>
+	
+
+   <div class = "tooltip" > Hover over for time and date
+     <span class = "tooltiptext">  <p id ="date"> </p></span>
+  </div>
+        
+
+
+	<div id='Mined_Minds_Box'>
+		<ul id="ourList">
+			 <li> Mined Minds </li>
+		</ul>
+	</div>
+
+</body>
+</html>
+
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+<!-- <script type= "text/javascript" src="js/date_time.js"</script> -->
+<!-- <img src="./img/pizzahut.jpg">
+<a href="contact"><img src="./img/pizzahut.jpg"></a> -->
