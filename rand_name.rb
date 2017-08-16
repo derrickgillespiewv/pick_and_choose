@@ -11,6 +11,7 @@
 # end
 
 def names_two(names)
+		names.map{ |i|  %Q('#{i}') }.join(',')
 		names = names.map(&:capitalize)
 		little_array = []
 		sets = names.shuffle

@@ -8,7 +8,7 @@
    <link rel= "stylesheet" type="text/css" href="css/style.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="script.js"></script>
-   <title>Test Site</title>
+   <title>Name Pairs</title>
 </head>
 
 <body>
@@ -40,13 +40,14 @@
   </div>
 	<div id = "name_data">
 
-  <p>How many people do you want to sort into groups of two(three if odd out)?</p>
+  <p>This Machine pairs people randomly</p>
     <form method = "post" action = "pairs_out" id = "text_box">
-    <input type ="number" min = 2 max = 100 autofocus = "autofocus" id ="nameList" oninput = "nameFunction()" >
+    <input type = "button" id = "nameButton" value = "Click for name slot" onclick = "nameFunction()" />
+   <!--  <input type ="number" min = 2 max = 100 autofocus = "autofocus" id ="nameList" oninput = "nameFunction()" > -->
     <p id = "demo"></p>
     <br>
     <br>
-    <input type = "submit">
+    <input type = "submit" value = "Mix-'Em-Up">
 </form></center>
 
 <script src = "js/name_pair.js"></script>

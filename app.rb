@@ -1,61 +1,14 @@
 require "sinatra"
-require_relative "money_hash.rb"
 require_relative"rand_name.rb"
-
-get '/' do
-erb :index
-end 
-
-get '/index' do
-erb :index
-end
-
-post '/index' do 
-end 
-
-
-get '/enter_amount' do 
-	erb :enter_amount
-end 
-
-post '/enter_amount' do
-	money = params[:money]
-	calc = params[:calc]
-	calc = change_machine(money.to_f)
- 	redirect '/amount_out?money=' + money + '&calc=' + calc
-end
-
-get '/amount_out' do 
-	money = params[:money]
-	calc = params[:calc]
-	# calc = change_machine(money.to_f)
-	erb :amount_out, :locals => {:money=>money, :calc=>calc}
-end 
-
-post '/amount_out' do
-	calc = parms[:calc]
-	money = params[:money]
-end
-
-get '/enter_amount' do 
-	erb :enter_amount
-end 
-
-post '/enter_amount' do
-	money = params[:money]
-	calc = params[:calc]
-	calc = change_machine(money.to_f)
- 	redirect '/amount_out?money=' + money + '&calc=' + calc
-end
 
 #name pair code
 
-get '/enter_name' do
+get '/' do
     erb :enter_name
 end
 
 post '/pairs_out' do
-    names = params.values
+    names = params[:text]
     names_two = names_two(names)
     erb :pairs_out, :locals => {:names_two => names_two}
 end
