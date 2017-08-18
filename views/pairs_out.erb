@@ -39,21 +39,16 @@
   </div>
 	
   <div id = "name_data">
-
+<form method = "post" action = "check_pair" id = "text_box">
   Here are your randomly paired groups:<br>
 <br>
-
-<br>
- 
+<%= names_two %>
 <fieldset>
   <legend>Choose which pairings you like</legend>
-  <div>
-  <%= names_two %>
-   <!--  <input type="checkbox" id="coding" name="interest" value="coding">
-    <label for="coding">Coding</label> -->
-  </div>
-  <div>
-  <!--   <input type="checkbox" id="music" name="interest" value="music">
+  <div id="some_div">
+  <input type ="checkbox" autofocus = "autofocus" id ="checkInput" value= <%= names_two %> onload= "checkFunction()" >
+   <p id = "demo1"></p>
+    <!-- <input type="checkbox" id="music" name="interest" value="music">
     <label for="music">Music</label> -->
   </div>
 </fieldset>
